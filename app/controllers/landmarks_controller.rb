@@ -4,5 +4,4 @@ class LandmarksController < ApplicationController
     erb ':/landmarks/new'
   end
 
-
 end
