@@ -9,7 +9,7 @@ class LandmarksController < ApplicationController
     redirect("/landmarks/#{@landmark.id}")
   end
 
-  get :'/landmarks/:id'
+  get :'/landmarks/:id' do
     erb :'landmarks/show'
   end
 end
