@@ -9,12 +9,12 @@
 
     <h3> Edits for Titles </h3>
     <% Title.all.each do |title| %>
-      <label><%= title.name %></label><input id="<%= title.name %>" type="checkbox" name="figure[title_ids]" value="<%= title.id %>">
+      <label><%= title.name %></label><input id="<%= title.name %>" type="checkbox" name="figure[title_ids]" value="<%= title.id %>"></br>
     <% end %>
 
     <h3> Landmarks </h3>
     <% Landmark.all.each do |landmark| %>
-      <label><%= landmark.name %></label><input id="landmark_<%= landmark.id %>" type="checkbox" name="figure[landmark_ids][]" value="<%= landmark.id %>">
+      <label><%= landmark.name %></label><input id="landmark_<%= landmark.id %>" type="checkbox" name="figure[landmark_ids][]" value="<%= landmark.id %>"></br>
     <% end %>
 
     <label for="new_landmark">Landmark Name</label>
