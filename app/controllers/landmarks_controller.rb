@@ -26,7 +26,7 @@ class LandmarksController < ApplicationController
   patch '/landmarks/:id' do
     @landmark = Landmark.find(params[:id])
 
-    @figure.update(params[:figure])
+    @landmark.update(params[:landmark])
 
     if !params[:landmark][:name].empty?
       @figure.landmarks << Landmark.create(params[:landmark])
