@@ -13,5 +13,4 @@ class LandmarksController < ApplicationController
     erb :'show'
   end
 
-
 end
