@@ -3,7 +3,7 @@
   <form action="/landmarks/<%= @landmark.id %>" method="POST">
     <input id="hidden" type="hidden" name="_method" value="patch">
     <label for="landmark_name" >Landmark Name</label>
-    <input id="figure_name" type="text" name="figure[name]" value="<%= @figure.name %>">
+    <input id="landmark_name" type="text" name="landmark[name]" value="<%= @landmark.name %>">
 
     <label> Edits for Titles </label>
     <% Title.all.each do |title| %>
