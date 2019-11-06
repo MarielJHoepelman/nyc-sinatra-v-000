@@ -19,6 +19,7 @@ class LandmarksController < ApplicationController
   end
 
   get '/landmarks/:id/edit' do
+    
   end
 
 end
