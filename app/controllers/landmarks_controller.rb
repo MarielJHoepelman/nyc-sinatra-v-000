@@ -28,10 +28,6 @@ class LandmarksController < ApplicationController
 
     @landmark.update(params[:landmark])
 
-    # if !params[:landmark][:name].empty?
-    #   @figure.landmarks << Landmark.create(params[:landmark])
-    # end
-
     redirect("/landmarks/#{@landmark.id}")
   end
 
