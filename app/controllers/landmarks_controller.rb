@@ -10,6 +10,6 @@ class LandmarksController < ApplicationController
   end
 
   get :'/landmarks/:id'
-    erb :'landmarks/how'
+    erb :'landmarks/show'
   end
 end
