@@ -7,7 +7,7 @@
 
 <label> Titles </label>
 <% Title.all.each do |title| %>
-  <label><%= title.name %></label><input id="title_<%= title.id %>" type="checkbox" name="figure[title_ids][]" value="<%= title.id %>">
+  <label><%= title.name %></label><input id="title_<%= title.id %>" type="checkbox" name="figure[title_ids][]" value="<%= title.id %>"></br>
 <% end %>
 
 <label> Landmarks </label>
