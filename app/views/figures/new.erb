@@ -5,18 +5,18 @@
 <label for="figure_name">Figure Name</label>
 <input type="text" name="figure[name]" id="figure_name"> </br>
 
-<h2> Titles </h2>
+<h3> Titles </h3>
 <% Title.all.each do |title| %>
   <label><%= title.name %></label><input id="title_<%= title.id %>" type="checkbox" name="figure[title_ids][]" value="<%= title.id %>"></br>
 <% end %>
 
-<h2> Landmarks </h2>
+<h3> Landmarks </h3>
 <% Landmark.all.each do |landmark| %>
   <label><%= landmark.name %></label><input id="landmark_<%= landmark.id %>" type="checkbox" name="figure[landmark_ids][]" value="<%= landmark.id %>"></br>
 <% end %>
 </br>
 
-<h2> New Landmark </h2>
+<h3> New Landmark </h3>
 <label for="new_landmark">Name</label>
 <input type="text" name="landmark[name]" id="new_landmark"> </br>
 
